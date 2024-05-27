@@ -614,6 +614,7 @@ export default class Gantt {
                 append_to: this.$container,
             });
 
+            let $today = document.getElementById(date_utils.format(date).replaceAll(' ', '_'));
             $today.classList.add('current-date-highlight');
             $today.style.top = +$today.style.top.slice(0, -2) - 4 + 'px';
             $today.style.left = +$today.style.left.slice(0, -2) - 8 + 'px';
